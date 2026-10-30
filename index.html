@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio — built with HTML, CSS, JavaScript, Python and MongoDB." />
+  <title>My Portfolio — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- ===== Header / Nav ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Go to home">
+        <span class="brand__mark" aria-hidden="true">YN</span>
+        <span class="brand__text">My Portfolio</span>
+      </a>
+
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+          <li><a href="#certifications" class="nav__link" data-section="certifications">Certifications</a></li>
+          <li><a href="#contact" class="nav__link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="mobileMenu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav aria-label="Mobile">
+        <ul class="mobile-menu__list">
+          <li><a href="#home" class="mobile-menu__link">Home</a></li>
+          <li><a href="#about" class="mobile-menu__link">About</a></li>
+          <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+          <li><a href="#projects" class="mobile-menu__link">Projects</a></li>
+          <li><a href="#certifications" class="mobile-menu__link">Certifications</a></li>
+          <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Home / Hero ===== -->
+    <section id="home" class="section hero main-section">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="pill">✦ Available for opportunities</span>
+          <h1 class="hero__title">
+            Hi, I'm <span class="gradient-text">Shiv Sagar Kumar
+            </span><br />
+            a Developer who loves building clean, accessible and useful software for the web.
+          </h1>
+          <p class="hero__subtitle">
+            A passionate developer focused on building clean, accessible and useful software
+            for the web. I work across the stack with HTML, CSS, JavaScript, Python and Java,
+            with a Python + MongoDB back-end powering this very site.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects ↓</a>
+            <a href="#contact" class="btn btn--outline">Contact Me ✉</a>
+          </div>
+
+          <ul class="socials" aria-label="Social links">
+            <li><a href="#" aria-label="GitHub" class="social">GH</a></li>
+            <li><a href="#" aria-label="LinkedIn" class="social">IN</a></li>
+            <li><a href="#" aria-label="Twitter" class="social">TW</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__avatar" aria-hidden="true">
+          <div class="avatar">
+            <span class="avatar__initials">YN</span>
+            <span class="avatar__label">Web Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats">
+        <div class="stat"><span class="stat__value">3+</span><span class="stat__label">Years Coding</span></div>
+        <div class="stat"><span class="stat__value">15+</span><span class="stat__label">Projects Built</span></div>
+        <div class="stat"><span class="stat__value">4</span><span class="stat__label">Certifications</span></div>
+        <div class="stat"><span class="stat__value">∞</span><span class="stat__label">Cups of Coffee</span></div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section section--alt main-section" hidden>
+      <div class="container about-grid">
+        <div class="about-grid__heading">
+          <p class="section__eyebrow">// 01 — Get to know me</p>
+          <h2 class="section__title">About Me</h2>
+          <span class="section__bar"></span>
+        </div>
+        <div class="about-grid__body">
+          <p>Hello! I'm a developer who loves turning ideas into clean, working software. My journey started with simple
+            HTML pages, and it quickly grew into a passion for building complete, useful applications. I enjoy the
+            moment when an idea on a whiteboard becomes a product that real people can use and benefit from.</p>
+          <p>Over the past few years I've worked across the stack — crafting user interfaces with HTML, CSS and
+            JavaScript, writing clean back-end logic in Python (this site stores messages to MongoDB via a Flask API),
+            and learning strong software design patterns in Java. I care about writing code that is readable, tested,
+            and easy to maintain, not just code that works today.</p>
+          <p>When I'm not coding, you'll find me exploring new developer tools, contributing to small open-source
+            projects, and reading about the latest in web performance and accessibility. I'm always happy to collaborate
+            — feel free to reach out through the contact section below.</p>
+
+          <div class="info-grid">
+            <div class="info-tile"><span class="info-tile__icon">📍</span>
+              <div>
+                <p class="info-tile__label">Location</p>
+                <p class="info-tile__value">Bokaro(Jharkhand), India</p>
+              </div>
+            </div>
+            <div class="info-tile"><span class="info-tile__icon">💼</span>
+              <div>
+                <p class="info-tile__label">Focus</p>
+                <p class="info-tile__value">Full-Stack Web</p>
+              </div>
+            </div>
+            <div class="info-tile"><span class="info-tile__icon">🎓</span>
+              <div>
+                <p class="info-tile__label">Education</p>
+                <p class="info-tile__value">Bachelor of Technology with specialization in Computer Science</p>
+              </div>
+            </div>
+            <div class="info-tile"><span class="info-tile__icon">📞</span>
+              <div>
+                <p class="info-tile__label">Availability</p>
+                <p class="info-tile__value">Open to Internships</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section main-section" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">// 02 — Technologies I work with</p>
+          <h2 class="section__title">Skills</h2>
+          <span class="section__bar"></span>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill cards injected by script.js so it doubles as a tiny vanilla-JS demo -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section section--alt main-section" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">// 03 — Things I've built</p>
+          <h2 class="section__title">Projects</h2>
+          <span class="section__bar"></span>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project cards injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Certifications ===== -->
+    <section id="certifications" class="section main-section" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">// 04 — Proof of learning</p>
+          <h2 class="section__title">Certifications</h2>
+          <span class="section__bar"></span>
+        </div>
+
+        <div class="certs-grid" id="certsGrid">
+          <!-- Cert cards injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section section--alt main-section" hidden>
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow">// 05 — Let's connect</p>
+          <h2 class="section__title">Contact</h2>
+          <span class="section__bar"></span>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of. Whether you
+              have a question, a project idea, or just want to say hi — drop a message and I'll get back to you as soon
+              as I can. Submissions are stored in MongoDB via the Python (Flask) back-end.</p>
+
+            <div class="info-tile"><span class="info-tile__icon">✉</span>
+              <div>
+                <p class="info-tile__label">Email</p>
+                <p class="info-tile__value">hello@example.com</p>
+              </div>
+            </div>
+            <div class="info-tile"><span class="info-tile__icon">📍</span>
+              <div>
+                <p class="info-tile__label">Location</p>
+                <p class="info-tile__value">Bengaluru, India</p>
+              </div>
+            </div>
+            <div class="info-tile"><span class="info-tile__icon">📞</span>
+              <div>
+                <p class="info-tile__label">Phone</p>
+                <p class="info-tile__value">+91 98765 43210</p>
+              </div>
+            </div>
+
+            <ul class="socials" aria-label="Social links">
+              <li><a href="#" aria-label="GitHub" class="social">GH</a></li>
+              <li><a href="#" aria-label="LinkedIn" class="social">IN</a></li>
+              <li><a href="#" aria-label="Twitter" class="social">TW</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form card" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Send Message →</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> My Portfolio. Built with HTML, CSS, JS, Python &amp; MongoDB.
+      </p>
+      <ul class="socials" aria-label="Social links">
+        <li><a href="#" aria-label="GitHub" class="social">GH</a></li>
+        <li><a href="#" aria-label="LinkedIn" class="social">IN</a></li>
+        <li><a href="#" aria-label="Twitter" class="social">TW</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
